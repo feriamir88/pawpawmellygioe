@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://vuejsdevelopers.com/images/posts/form_handling_vuelidate.png
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Nuxtjs B Field バリデート</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Nuxtjs B Field バリデート",
+  "datePublished": "2021-04-27",
+  "image": [https://soshace.com/wp-content/uploads/2019/11/form-validation-in-vue-using-vuelidate-i.jpg,https://miro.medium.com/max/767/1*lg4K73QpcODX3WmW4Vbnlg.png,https://programmer.help/images/blog/856752be3f3e281ba08e880d7dba57e8.jpg],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=nuxtjs b field バリデート",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Nuxtjs B Field バリデート</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-danger" href="/mct044-%E7%A7%98%E5%AF%86%E3%81%AE1%E6%97%A5%E3%83%87%E3%83%BC%E3%83%88-6-%E6%B5%B7%E7%A9%BA%E8%8A%B1.html">mct044 秘密の1日デート 6 海空花</a>
+											<a class="badge badge-dark" href="/%E6%A8%AA%E6%B5%9C-%E8%BE%9B%E3%81%84-%E3%82%82%E3%81%AE-%E3%83%87%E3%83%BC%E3%83%88.html">横浜 辛い もの デート</a>
+											<a class="badge badge-primary" href="/%E6%9C%89%E6%A5%BD%E7%94%BA-%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC-%E3%83%87%E3%83%BC%E3%83%88-%E5%A4%9C%E6%99%AF.html">有楽町 ディナー デート 夜景</a>
+											<a class="badge badge-danger" href="/4%E5%9B%9E%E3%83%87%E3%83%BC%E3%83%88-%E3%83%95%E3%82%A7%E3%83%BC%E3%83%89%E3%82%A2%E3%82%A6%E3%83%88.html">4回デート フェードアウト</a>
+											<a class="badge badge-primary" href="/%E5%BF%AB%E6%A5%BD%E8%82%89%E4%BA%BA%E5%BD%A2%E6%8B%B7%E5%95%8F%E5%B7%A5%E6%88%BF-%E6%B7%AB%E8%BE%B1-%E7%82%BA%E3%81%99%E8%A1%93%E3%81%AA%E3%81%8F%E6%8D%95%E3%81%BE%E3%81%A3%E3%81%A6%E6%B0%97%E3%81%8C%E7%8B%82%E3%81%86%E3%81%BB%E3%81%A9%E3%82%A4%E3%81%8B%E3%81%95%E3%82%8C%E3%82%8B%E6%95%8F%E6%84%9F%E4%BD%93%E8%B3%AA%E3%81%AA%E3%83%92%E3%83%AD%E3%82%A4%E3%83%B3%E3%81%AE%E7%B5%B6%E4%BD%93%E7%B5%B6%E5%91%BD%E3%83%94%E3%83%B3%E3%83%81.html">快楽肉人形拷問工房 淫辱 為す術なく捕まって気が狂うほどイかされる敏感体質なヒロインの絶体絶命ピンチ</a>
+											<a class="badge badge-secondary" href="/8-%E5%B8%8C%E5%92%B2%E3%81%82%E3%82%84-%E8%92%BC%E4%BA%95%E3%81%95%E3%81%8F%E3%82%89-%E5%88%A5%E8%8D%98%E3%81%8A%E6%B3%8A%E3%82%8A%E3%83%87%E3%83%BC%E3%83%88-%E9%87%8E%E5%A4%96%E8%AA%98%E6%83%91%E7%B7%A8.html">8 希咲あや 蒼井さくら 別荘お泊りデート 野外誘惑編</a>
+											<a class="badge badge-danger" href="/%E5%8D%83%E6%AD%B3-%E5%A4%9C-%E3%83%87%E3%83%BC%E3%83%88.html">千歳 夜 デート</a>
+											<a class="badge badge-danger" href="/3%E5%9B%9E%E7%9B%AE%E3%81%AE%E3%83%87%E3%83%BC%E3%83%88-%E7%AD%94%E3%81%88%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%AA%E3%81%84.html">3回目のデート 答えてくれない</a>
+											<a class="badge badge-secondary" href="/%E7%9B%AE%E3%81%AE%E9%96%93%E9%9A%94%E3%81%8C%E5%BA%83%E3%81%84-%E4%BA%BA%E5%BD%A2%E5%90%8D.html">目の間隔が広い 人形名</a>
+											<a class="badge badge-primary" href="/%E6%9D%B1%E4%BA%AC-%E6%9C%9D-%E3%81%8B%E3%82%89-%E3%83%87%E3%83%BC%E3%83%88.html">東京 朝 から デート</a>
+											<a class="badge badge-secondary" href="/2-%E5%9B%9E%E7%9B%AE-%E3%83%87%E3%83%BC%E3%83%88-%E3%82%B9%E3%83%8B%E3%83%BC%E3%82%AB%E3%83%BC.html">2 回目 デート スニーカー</a>
+											<a class="badge badge-danger" href="/%E3%81%84%E3%81%8D%E3%81%AA%E3%82%8A%E3%83%87%E3%83%BC%E3%83%88-%E8%A9%95%E4%BE%A1-%E7%9B%B8%E6%89%8B.html">いきなりデート 評価 相手</a>
+											<a class="badge badge-secondary" href="/%E6%9D%B1-%E5%B2%A9%E6%A7%BB-%E9%88%B4%E6%9C%A8-%E4%BA%BA%E5%BD%A2-%E5%BA%97.html">東 岩槻 鈴木 人形 店</a>
+											<a class="badge badge-success" href="/%E6%97%A5%E6%9C%AC%E6%9C%80%E5%8F%A4-%E4%BA%BA%E5%BD%A2%E6%98%A0%E7%94%BB.html">日本最古 人形映画</a>
+											<a class="badge badge-danger" href="/%E6%9C%A8%E3%81%AE%E4%BA%BA%E5%BD%A2-mmd.html">木の人形 mmd</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://programmer.help/images/blog/856752be3f3e281ba08e880d7dba57e8.jpg" data-lightbox="roadtrip" data-title="Use Vee Validate Form Validation In Vue Js Nuxt Js Project">
+						<img class="card-img" src="https://programmer.help/images/blog/856752be3f3e281ba08e880d7dba57e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQywm8WAVLpQ9Voc9Fu-qU_ObRIUcrk5dwQzRrmYrJ6g1PeHZsXj4ulEDXqXHZEoxl82Bg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Use Vee Validate Form Validation In Vue Js Nuxt Js Project
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img.storyblok.com/V-p8wU3IwEty2ZytI8bJ8vKMIAk=/1000x0/f/51376/600x600/01ec78f84c/og-dynamic-forms-vuelidate-storyblok.jpg" data-lightbox="roadtrip" data-title="How To Create Dynamic Forms With Custom Validation In Storyblok And Nuxt Js Storyblok">
+						<img class="card-img" src="https://img.storyblok.com/V-p8wU3IwEty2ZytI8bJ8vKMIAk=/1000x0/f/51376/600x600/01ec78f84c/og-dynamic-forms-vuelidate-storyblok.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsXFCoMzx5mTtFshQ2wUn7-dgPOC1eGYE3WsZquE4zpTkaFP0Ykq9_qZ44g4r67cvZLB0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Create Dynamic Forms With Custom Validation In Storyblok And Nuxt Js Storyblok
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img.storyblok.com/1syFk5SOiZPG7-lDwOE4jRloKlQ=/840x0/f/51376/842x804/ff3e273179/definition-of-min-length.png" data-lightbox="roadtrip" data-title="How To Create Dynamic Forms With Custom Validation In Storyblok And Nuxt Js Storyblok">
+						<img class="card-img" src="https://img.storyblok.com/1syFk5SOiZPG7-lDwOE4jRloKlQ=/840x0/f/51376/842x804/ff3e273179/definition-of-min-length.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRTzjYhAha2krw4phoA4HJigOSqSlj95D_6_W1OKORbD2neBNUlF0LsvfQhw6Y730C-FA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Create Dynamic Forms With Custom Validation In Storyblok And Nuxt Js Storyblok
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img.storyblok.com/bej3HZoEQN4UQ8IrIOPbQbWDAFE=/840x0/f/51376/2034x892/4adb17cbf7/components-overview.png" data-lightbox="roadtrip" data-title="How To Create Dynamic Forms With Custom Validation In Storyblok And Nuxt Js Storyblok">
+						<img class="card-img" src="https://img.storyblok.com/bej3HZoEQN4UQ8IrIOPbQbWDAFE=/840x0/f/51376/2034x892/4adb17cbf7/components-overview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTlocYbdF4B7bolxufAy5V_C7VnGkFUSh_zngUUMy6d9cc7Pv0oR-SFr8INWQWMvRJOUg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Create Dynamic Forms With Custom Validation In Storyblok And Nuxt Js Storyblok
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.ytimg.com/vi/lA4VvL0ZXIg/mqdefault.jpg" data-lightbox="roadtrip" data-title="How To Create Dynamic Forms With Custom Validation In Storyblok And Nuxt Js Storyblok">
+						<img class="card-img" src="https://i.ytimg.com/vi/lA4VvL0ZXIg/mqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRadVmisE-wVhGlrlv_jKtO11ZlvaFuaA6H_nEjiucRtq68bU3HbnVPCexdERngkOuiZks';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Create Dynamic Forms With Custom Validation In Storyblok And Nuxt Js Storyblok
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://api.willbrowning.me/storage/uploads/2019/04/05/5ca72f15d8137contact-form.png" data-lightbox="roadtrip" data-title="Building A Static Blog With Nuxt Js And Cockpit Headless Cms Part 6 Contact Forms">
+						<img class="card-img" src="https://api.willbrowning.me/storage/uploads/2019/04/05/5ca72f15d8137contact-form.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAHv1L1L_zfxksMLBoQBQF-O8SM6rPmaxdCk8weVhq_xSwmx-RAPNgZLUvDCq8mA_fJ1o';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Building A Static Blog With Nuxt Js And Cockpit Headless Cms Part 6 Contact Forms
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://programmer.help/images/blog/4cbf9132a852f6140de8ed8c3a2d8292.jpg" data-lightbox="roadtrip" data-title="Use Vee Validate Form Validation In Vue Js Nuxt Js Project">
+						<img class="card-img" src="https://programmer.help/images/blog/4cbf9132a852f6140de8ed8c3a2d8292.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8pKb1p5MELXdFGas3Ozsk-fWP9WJYtHsqgnonjRDJ8YGXH2HCtRf21RW2ZL-BqIDUZRY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Use Vee Validate Form Validation In Vue Js Nuxt Js Project
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.pusher.com/wp-content/uploads/2017/08/complete-guide-form-validation-vue-4.png" data-lightbox="roadtrip" data-title="Complete Guide To Form Validation In Vue">
+						<img class="card-img" src="https://blog.pusher.com/wp-content/uploads/2017/08/complete-guide-form-validation-vue-4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8CGUCi6ereoXiXxiCXTOgE5R1zoQ31sf9-QazEi2avUfqTM7dOxabPiNKrRY0P27g_k4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Complete Guide To Form Validation In Vue
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.positronx.io/wp-content/uploads/2020/04/vue-veevalidate-9516-002.png" data-lightbox="roadtrip" data-title="Vue Js 3 Veevalidate Bootstrapvue Form Validation Example Positronx Io">
+						<img class="card-img" src="https://www.positronx.io/wp-content/uploads/2020/04/vue-veevalidate-9516-002.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXSfskK9ZT86ov9MxCt-9747SIj8dEy8w084XJ9i9VGQpzFKeOLtEEtn9yefEPO85jhnE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Vue Js 3 Veevalidate Bootstrapvue Form Validation Example Positronx Io
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img.storyblok.com/-t-Vuj01a1wTgts7220GhwcADg4=/840x0/f/51376/808x330/8abb21a438/definition-of-submit-button.png" data-lightbox="roadtrip" data-title="How To Create Dynamic Forms With Custom Validation In Storyblok And Nuxt Js Storyblok">
+						<img class="card-img" src="https://img.storyblok.com/-t-Vuj01a1wTgts7220GhwcADg4=/840x0/f/51376/808x330/8abb21a438/definition-of-submit-button.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBDnlxUvZ4m_NtwfB-Qn82bE-GLgYypcwo4IyRDInQc0o_lTYHilPvU3Ne2uOwIq88Uy0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Create Dynamic Forms With Custom Validation In Storyblok And Nuxt Js Storyblok
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://user-images.githubusercontent.com/7412876/56720508-4e8f6180-6743-11e9-847b-b63d2c807971.png" data-lightbox="roadtrip" data-title="Vue Warn Invalid Prop Type Check Failed For Prop Maxdate Expected Date Got Date Issue 36 Buefy Nuxt Buefy Github">
+						<img class="card-img" src="https://user-images.githubusercontent.com/7412876/56720508-4e8f6180-6743-11e9-847b-b63d2c807971.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN_sajtU_SkOox8XJdafO8pCwTHLXcXIg9iTkqmL4P66hBOTRVZEV6j8DKpOg3wf-I2g0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Vue Warn Invalid Prop Type Check Failed For Prop Maxdate Expected Date Got Date Issue 36 Buefy Nuxt Buefy Github
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://codar.club/images/blog/e7f6813d0b0548517afa11775d100b67.jpg" data-lightbox="roadtrip" data-title="Woman Light Up Your Vue Technology Stack Here Comes The Practice Notes Of Wanzi Nuxt Js Laptrinhx">
+						<img class="card-img" src="https://codar.club/images/blog/e7f6813d0b0548517afa11775d100b67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYrRSpIeRfZOUvPADquLDbkF9lT1u9gUsCDu8rqTPThjtTZ6ias5yhnc_TopYdEHJXgA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Woman Light Up Your Vue Technology Stack Here Comes The Practice Notes Of Wanzi Nuxt Js Laptrinhx
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.logrocket.com/wp-content/uploads/2021/03/nuxtvuex.png" data-lightbox="roadtrip" data-title="Scalable State Management With Vuex And Nuxt Js Logrocket Blog">
+						<img class="card-img" src="https://blog.logrocket.com/wp-content/uploads/2021/03/nuxtvuex.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bQmbmlr3_Q96-UxwghdgxQvNSXbrUDfEW01aGIAP0mwIkU6jfZBJbCR9zssnBPkuo7k';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Scalable State Management With Vuex And Nuxt Js Logrocket Blog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://d33wubrfki0l68.cloudfront.net/ea81946f531a74084921fd77710afc3aca28ceb9/6a4c2/docs/2.x/views.png" data-lightbox="roadtrip" data-title="Views Nuxtjs">
+						<img class="card-img" src="https://d33wubrfki0l68.cloudfront.net/ea81946f531a74084921fd77710afc3aca28ceb9/6a4c2/docs/2.x/views.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsSjN7c2rwuMHANZZFGI6Jy0SXu6Sq5j92Ri9CwGX4srDUOmueYeYS5RcqHg3ScaVd8Co';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Views Nuxtjs
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://miro.medium.com/max/920/1*CM9tZI28r0sJjb53MtjmYw.png" data-lightbox="roadtrip" data-title="Summary Of Vuejs By Sarah Drasner Part 4 Of 7 Vue Cli Nuxt Js By Lim Medium">
+						<img class="card-img" src="https://miro.medium.com/max/920/1*CM9tZI28r0sJjb53MtjmYw.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXEkm-eCER9BWwG6ZEoxvulczwvdWhQGMXMOaYGwVBxanmcMKHEoKKrTEZb3zYVsJZ3c';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Summary Of Vuejs By Sarah Drasner Part 4 Of 7 Vue Cli Nuxt Js By Lim Medium
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://vuejsdevelopers.com/images/posts/form_handling_vuelidate.png" data-lightbox="roadtrip" data-title="Simple Vue Js Form Validation With Vuelidate Vue Js Developers">
+						<img class="card-img" src="https://vuejsdevelopers.com/images/posts/form_handling_vuelidate.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkW7c-8qWyr_Fj3EaoBHAouxz4fUEg1xuvkDXRJpeRSjup2twe4XhUd4APf7ekA1ugu8M';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Simple Vue Js Form Validation With Vuelidate Vue Js Developers
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://miro.medium.com/max/1200/1*5Udm3k053B9Xa9KiF_gwVQ.png" data-lightbox="roadtrip" data-title="Check If An Input Element Is Focused With Vue Focus By John Au Yeung Javascript In Plain English">
+						<img class="card-img" src="https://miro.medium.com/max/1200/1*5Udm3k053B9Xa9KiF_gwVQ.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ95qlLF0h0j3ZOtBONVHX5wOotcj1byjwGvsil2OOcAVC2UIJn3B_m4Zn3bCvd8ryqjCc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Check If An Input Element Is Focused With Vue Focus By John Au Yeung Javascript In Plain English
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/9b65765e-43b4-40a4-a94c-faa7c881372b/3-nuxtjs-expressjs.png" data-lightbox="roadtrip" data-title="How To Build A Music Manager With Nuxt Js And Express Js Smashing Magazine">
+						<img class="card-img" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/9b65765e-43b4-40a4-a94c-faa7c881372b/3-nuxtjs-expressjs.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU0ZlQ9YidT1Fbr8Gy0Ck1VLw9NHLN_M5ZCELZqPS4PAkULrzdd3BlFmohN8edNJ7t_aU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Build A Music Manager With Nuxt Js And Express Js Smashing Magazine
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.positronx.io/wp-content/uploads/2020/04/vue-veevalidate-9516-001.png" data-lightbox="roadtrip" data-title="Vue Js 3 Veevalidate Bootstrapvue Form Validation Example Positronx Io">
+						<img class="card-img" src="https://www.positronx.io/wp-content/uploads/2020/04/vue-veevalidate-9516-001.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGZzfu1CDjZYnO30lR1tT9GCSx87560B_YiYjqEIm0BIoTVVgKYsA_4y7CYR0ziP40G7g';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Vue Js 3 Veevalidate Bootstrapvue Form Validation Example Positronx Io
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/VKKol.png" data-lightbox="roadtrip" data-title="How To Disable Only Leading Space In The Input Text Field Vue Js Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/VKKol.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDW4NDu8WirLx0Tna9JNsyXJEqcEUcFVimuuZpz5A8E1Xlw0bSXVN_h68fOPP6xueAbHY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Disable Only Leading Space In The Input Text Field Vue Js Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F143177%2F879ca81b-5504-29f9-f7c3-da78d72f86d6.jpeg?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=9229f464b542d4f29acf172d90d9d4db" data-lightbox="roadtrip" data-title="Nuxt Js Buefyでveevalidateを使う方法 2020年版 Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F143177%2F879ca81b-5504-29f9-f7c3-da78d72f86d6.jpeg?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=9229f464b542d4f29acf172d90d9d4db" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpV_cMxFtrilW0Ehk-O-eiNMo484WxnWao2w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Nuxt Js Buefyでveevalidateを使う方法 2020年版 Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.pusher.com/wp-content/uploads/2017/08/complete-guide-form-validation-vue-5.png" data-lightbox="roadtrip" data-title="Complete Guide To Form Validation In Vue">
+						<img class="card-img" src="https://blog.pusher.com/wp-content/uploads/2017/08/complete-guide-form-validation-vue-5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyZDlAwMXzFrvZrCZdg352wmJrH1qeS1S4rg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Complete Guide To Form Validation In Vue
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn.cosmicjs.com/0d0f60c0-c014-11e7-9a3a-8fba475cce0d-restaurant-menu-app.png" data-lightbox="roadtrip" data-title="How To Build A Restaurant Menu App In Nuxt Vuex Using Cosmic Cosmic">
+						<img class="card-img" src="https://cdn.cosmicjs.com/0d0f60c0-c014-11e7-9a3a-8fba475cce0d-restaurant-menu-app.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRugBm6579K0rn4mwYyyqHFxQ4iWqUAL94TjA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Build A Restaurant Menu App In Nuxt Vuex Using Cosmic Cosmic
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.logrocket.com/wp-content/uploads/2020/03/how-to-set-up-and-code-nuxtjs-apps-fully-in-typescript.png" data-lightbox="roadtrip" data-title="How To Set Up And Code Nuxt Js Apps Fully In Typescript Logrocket Blog">
+						<img class="card-img" src="https://blog.logrocket.com/wp-content/uploads/2020/03/how-to-set-up-and-code-nuxtjs-apps-fully-in-typescript.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk6JtRLmqCfJSkvF-PftPElYdaLOqRMbBepQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Set Up And Code Nuxt Js Apps Fully In Typescript Logrocket Blog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://res.cloudinary.com/practicaldev/image/fetch/s--qzIXA48_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/http://codingfundas.com/content/images/2019/09/nuxt.png" data-lightbox="roadtrip" data-title="How To Add Authentication To Your Universal Nuxt App Using Nuxt Auth Module Dev Community">
+						<img class="card-img" src="https://res.cloudinary.com/practicaldev/image/fetch/s--qzIXA48_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/http://codingfundas.com/content/images/2019/09/nuxt.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFsJjdsXi2KPN6hquHB4QDv-JOOTHtB4hUWg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Add Authentication To Your Universal Nuxt App Using Nuxt Auth Module Dev Community
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://soshace.com/wp-content/uploads/2019/11/form-validation-in-vue-using-vuelidate-i.jpg" data-lightbox="roadtrip" data-title="Form Validation In Vue Using Vuelidate Soshace Soshace">
+						<img class="card-img" src="https://soshace.com/wp-content/uploads/2019/11/form-validation-in-vue-using-vuelidate-i.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL38N4IW_cyZn4C12CASISWe80FTjpEcUVoA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Form Validation In Vue Using Vuelidate Soshace Soshace
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/138620e7-7da5-4729-9a4e-74f7b34e58ca/music-manager-nuxtjs-expressjs.png" data-lightbox="roadtrip" data-title="How To Build A Music Manager With Nuxt Js And Express Js Smashing Magazine">
+						<img class="card-img" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/138620e7-7da5-4729-9a4e-74f7b34e58ca/music-manager-nuxtjs-expressjs.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSO4P5JE5a7IXD1zsjMHFAda_fu8uH6zfDiQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Build A Music Manager With Nuxt Js And Express Js Smashing Magazine
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://miro.medium.com/max/767/1*lg4K73QpcODX3WmW4Vbnlg.png" data-lightbox="roadtrip" data-title="Form Validation With Html Vuejs By Emmanuel Itnext">
+						<img class="card-img" src="https://miro.medium.com/max/767/1*lg4K73QpcODX3WmW4Vbnlg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOeaNtVbk_xaXlTGWSEcFh0HqH3CNyTswpKQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Form Validation With Html Vuejs By Emmanuel Itnext
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/27eb3de4-0ab7-42b1-8bb2-6f88f78692b1/8-nuxtjs-expressjs.png" data-lightbox="roadtrip" data-title="How To Build A Music Manager With Nuxt Js And Express Js Smashing Magazine">
+						<img class="card-img" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/27eb3de4-0ab7-42b1-8bb2-6f88f78692b1/8-nuxtjs-expressjs.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmH28lSK3noeFqQgVcdlXzKE2yKqM7rGPvVg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Build A Music Manager With Nuxt Js And Express Js Smashing Magazine
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://soshace.com/wp-content/uploads/2019/11/form-validation-in-vue-using-vuelidate-t.jpg" data-lightbox="roadtrip" data-title="Form Validation In Vue Using Vuelidate Soshace Soshace">
+						<img class="card-img" src="https://soshace.com/wp-content/uploads/2019/11/form-validation-in-vue-using-vuelidate-t.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC2o0pKt_YTCbwyarGuAwsuenTu8SG_DVmjg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Form Validation In Vue Using Vuelidate Soshace Soshace
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://res.cloudinary.com/practicaldev/image/fetch/s--GrrwdvVF--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/z7p6ybg14n691ldmcg0o.png" data-lightbox="roadtrip" data-title="Easy Headless Wordpress With Nuxt Netlify Part Ii Dev Community">
+						<img class="card-img" src="https://res.cloudinary.com/practicaldev/image/fetch/s--GrrwdvVF--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/z7p6ybg14n691ldmcg0o.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj8a8PaVHtBVClELUuI8nfxPrbO6ePjshttg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Easy Headless Wordpress With Nuxt Netlify Part Ii Dev Community
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://raw.githubusercontent.com/ServiceStack/docs/master/docs/images/release-notes/techstacks-new.png" data-lightbox="roadtrip" data-title="Github Netcoreapps Techstacks Techstacks Web App Created Using Nuxt Js Vuetify">
+						<img class="card-img" src="https://raw.githubusercontent.com/ServiceStack/docs/master/docs/images/release-notes/techstacks-new.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSCS1iLcTd2zTzFyJJuQZQJFSsneaTT2Dd1Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Github Netcoreapps Techstacks Techstacks Web App Created Using Nuxt Js Vuetify
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3DNuxt.js%2520%252B%2520Buefy%25E3%2581%25A7VeeValidate%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%25E6%2596%25B9%25E6%25B3%2595%25EF%25BC%25882020%25E5%25B9%25B4%25E7%2589%2588%25EF%25BC%2589%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Dafa3e2e92c6b3bf3b8eddc0d1b070b8c&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540sikkim%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D07e15bf81a40e2c9abc28f9b8f184784&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=009f5abf0e84d79be04024c7e138e087" data-lightbox="roadtrip" data-title="Nuxt Js Buefyでveevalidateを使う方法 2020年版 Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3DNuxt.js%2520%252B%2520Buefy%25E3%2581%25A7VeeValidate%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%25E6%2596%25B9%25E6%25B3%2595%25EF%25BC%25882020%25E5%25B9%25B4%25E7%2589%2588%25EF%25BC%2589%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Dafa3e2e92c6b3bf3b8eddc0d1b070b8c&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540sikkim%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D07e15bf81a40e2c9abc28f9b8f184784&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=009f5abf0e84d79be04024c7e138e087" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPm5BCS7JqRqSl99353G-bVjKS423NHiwwrw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Nuxt Js Buefyでveevalidateを使う方法 2020年版 Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+		
+		
+		
+			</body>
+</html>
